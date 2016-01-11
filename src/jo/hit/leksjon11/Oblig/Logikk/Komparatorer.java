@@ -3,10 +3,16 @@ package jo.hit.leksjon11.Oblig.Logikk;
 /**
  * Created by Jo Øivind Gjernes on 11.01.2016.
  */
-public class Komparatorer
+public interface Komparatorer<E>
 {
-	public boolean adresseSort(Adresse elem1, Adresse elem2)
-	{
-		return elem1.getPostnummer() > elem2.getPostnummer();
-	}
+	/**
+	 * Return resultatet av å sammenligne høyre og venstre side
+	 * @param venstre venstre side
+	 * @param høyre høyre side
+	 * @return < 0 hvis venstre er mindre enn høyre,
+	 * 		0 hvis lik
+	 * 		> 0 hvis venstre er større enn høyre
+	 */
+	int compare(E venstre, E høyre) throws ClassCastException;
+
 }
