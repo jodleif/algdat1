@@ -2,6 +2,8 @@ package jo.hit.leksjon11.Oblig.Logikk;
 
 /**
  * Created by Jo Øivind Gjernes on 11.01.2016.
+ *
+ * Ikke brukt
  */
 public interface Komparatorer<E>
 {
